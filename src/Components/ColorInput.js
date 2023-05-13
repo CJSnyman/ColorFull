@@ -29,11 +29,15 @@ const ColorInput = ({ setColor1, setColor2 }) => {
     useEffect(() => {
         setColor1([red1, green1, blue1]);
         setColor2([red2, green2, blue2]);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [createRandom]);
 
     useEffect(() => {
         setColor1([red1, green1, blue1]);
         setColor2([red2, green2, blue2]);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
